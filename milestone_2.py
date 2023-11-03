@@ -11,4 +11,9 @@ print(word)
 
 # Task 3
 guess = input("\nEnter a single letter: ")
-print(guess)
+
+# Task 4
+if len(guess) == 1 and guess.isalpha():
+    print("\nGood guess!")
+else:
+    print("\nOpps! This is not a valid input.")
