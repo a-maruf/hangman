@@ -1,8 +1,15 @@
-# Milestone 4, Task 4
+# Milestone 4, Task 7
 import random
 
 class Hangman:
     def __init__(self, word_list, num_lives=5):
+        """
+        Initialize the Hangman game.
+
+        Parameters:
+        word_list (list): A list of words for the game.
+        num_lives (int): The number of lives the player has at the start of the game. Defaults to 5.
+        """
         self.word = random.choice(word_list)
         self.word_guessed = ['_' for letter in self.word]
         self.num_letters = len(set(self.word))
@@ -11,6 +18,12 @@ class Hangman:
         self.list_of_guesses = []
 
     def check_guess(self, guess):
+        """
+        Check if the guessed letter is in the word.
+
+        Parameters:
+        guess (str): The letter guessed by the player.
+        """
         # Convert the guessed letter to lower case
         guess = guess.lower()
 
@@ -39,6 +52,9 @@ class Hangman:
             print(f"You have {self.num_lives} lives left.")
 
     def ask_for_input(self):
+        """
+        Ask the user to guess a letter and check if the guess is in the word.
+        """
         while True:
             # Ask the user to guess a letter
             guess = input("\nGuess a letter: ")
@@ -56,12 +72,13 @@ class Hangman:
                 self.list_of_guesses.append(guess)
 
 
-# Test the class with a list of words
-hangman = Hangman(['apple', 'banana', 'cherry'])
-print(hangman.word)
-print(hangman.word_guessed)
-print(hangman.num_letters)
-print(hangman.num_lives)
-print(hangman.word_list)
-print(hangman.list_of_guesses)
-hangman.ask_for_input()
+if __name__ == "__main__":
+    # Test the class with a list of words
+    hangman = Hangman(['apple', 'banana', 'cherry'])
+    # print(hangman.word)
+    # print(hangman.word_guessed)
+    # print(hangman.num_letters)
+    # print(hangman.num_lives)
+    # print(hangman.word_list)
+    # print(hangman.list_of_guesses)
+    hangman.ask_for_input()
