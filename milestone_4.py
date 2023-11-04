@@ -17,6 +17,17 @@ class Hangman:
         # Check if the guess is in the word
         if guess in self.word:
             print(f"Good guess! {guess} is in the word.")
+
+            # Loop through each letter in the word
+            for char_index in range(len(self.word)):
+                # If the letter is equal to the guess
+                if self.word[char_index] == guess:
+                    # Replace the corresponding "_" in the word_guessed with the guess
+                    self.word_guessed[char_index] = guess
+                    
+                    # Reduce the variable num_letters by 1
+                    self.num_letters -= 1
+
         else:
             print(f"Sorry, {guess} is not in the word. Try again.")
 
