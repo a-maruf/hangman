@@ -1,4 +1,4 @@
-# Milestone 5, Task 1
+# Milestone 5, Task 4
 import random
 
 class Hangman:
@@ -12,7 +12,7 @@ class Hangman:
         """
         self.word = random.choice(word_list)
         self.word_guessed = ['_' for letter in self.word]
-        self.num_letters = len(set(self.word))
+        self.num_letters = len(self.word)
         self.num_lives = num_lives
         self.word_list = word_list
         self.list_of_guesses = []
@@ -26,7 +26,6 @@ class Hangman:
         """
         # Convert the guessed letter to lower case
         guess = guess.lower()
-        print(f"'check_guess error check: game.num_letters > 0': num_lives: {self.num_lives}, num_letters: {self.num_letters}")
  
         # Check if the guess is in the word
         if guess in self.word:
@@ -61,7 +60,7 @@ class Hangman:
             if self.num_lives <= 0 or self.num_letters == 0:
                 break
 
-            # Display the tetters discovered so far
+            # Display the letters discovered so far
             print("\n", self.word_guessed)
 
             # Ask the user to guess a letter
@@ -89,24 +88,12 @@ def play_game(word_list):
             print("You lost!")
             break
         elif game.num_letters == 0:
-            print("Congratulations. You won the game!")
+            print("\n", game.word_guessed)  # Displays letters of the word
+            print("Congratulations. You won the game!\n")
             break
         else:
-            print(f"'play_game' function 'elif game.num_letters > 0': num_lives: {game.num_lives}, num_letters: {game.num_letters}")
             game.ask_for_input()
 
 
 # Test the game with a list of words
 play_game(['apple', 'banana', 'cherry'])
-
-
-# if __name__ == "__main__":
-#     # Test the class with a list of words
-#     hangman = Hangman(['apple', 'banana', 'cherry'])
-#     # print(hangman.word)
-#     # print(hangman.word_guessed)
-#     # print(hangman.num_letters)
-#     # print(hangman.num_lives)
-#     # print(hangman.word_list)
-#     # print(hangman.list_of_guesses)
-#     hangman.ask_for_input()
