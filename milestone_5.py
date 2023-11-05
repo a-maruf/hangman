@@ -80,11 +80,12 @@ def play_game(word_list):
         if game.num_lives <= 0:
             print("You lost!")
             break
-        elif game.num_letters > 0:
+        elif game.num_letters == 0:
+            print("Congratulations. You won the game!")
+            break
+        else:
             print(f"'play_game' function 'elif game.num_letters > 0': num_lives: {game.num_lives}, num_letters: {game.num_letters}")
             game.ask_for_input()
-        else:
-            print("Congratulations. You won the game!")
 
 
 # Test the game with a list of words
