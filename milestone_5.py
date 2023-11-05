@@ -56,6 +56,10 @@ class Hangman:
         Ask the user to guess a letter and check if the guess is in the word.
         """
         while True:
+            # Check if the game is over before asking for another guess
+            if self.num_lives <= 0 or self.num_letters == 0:
+                break
+
             # Ask the user to guess a letter
             guess = input("\nGuess a letter: ")
 
