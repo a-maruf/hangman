@@ -27,6 +27,7 @@ class Hangman:
         # Convert the guessed letter to lower case
         guess = guess.lower()
         print(f"'check_guess error check: game.num_letters > 0': num_lives: {self.num_lives}, num_letters: {self.num_letters}")
+ 
         # Check if the guess is in the word
         if guess in self.word:
             print(f"Good guess! {guess} is in the word.")
@@ -59,6 +60,9 @@ class Hangman:
             # Check if the game is over before asking for another guess
             if self.num_lives <= 0 or self.num_letters == 0:
                 break
+
+            # Display the tetters discovered so far
+            print("\n", self.word_guessed)
 
             # Ask the user to guess a letter
             guess = input("\nGuess a letter: ")
