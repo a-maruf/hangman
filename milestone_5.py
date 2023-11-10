@@ -1,6 +1,7 @@
 # Milestone 5, Task 4
 import random
 
+
 class Hangman:
     def __init__(self, word_list, num_lives=5):
         """
@@ -96,4 +97,5 @@ def play_game(word_list):
 
 
 # Test the game with a list of words
-play_game(['apple', 'banana', 'cherry'])
+if __name__ == "__main__":
+    play_game(['apple', 'banana', 'cherry'])
