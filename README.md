@@ -31,7 +31,7 @@ To play the game, simply run the `hangman.py` file. The game will start automati
 
 ![img4_you_have_lost.png](https://github.com/a-maruf/hangman/blob/main/Images/img4_you_have_lost.png)
 
-![img5_you_won.png](https://github.com/a-maruf/hangman/blob/main/Images/img4_you_have_lost.png)
+![img5_you_won.png](https://github.com/a-maruf/hangman/blob/main/Images/img5_you_won.png)
 
 ## File Structure
 The project has a simple file structure:
