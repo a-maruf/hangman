@@ -23,15 +23,15 @@ To install this project, follow these steps:
 ## Usage Instructions
 To play the game, simply run the `hangman.py` file. The game will start automatically. You will be prompted to enter a single letter. If your guess is correct, the game will update to show where in the word your letter guess appears. If your guess is incorrect, the game will let you know. The game continues until you have guessed the word correctly or until you have made too many incorrect guesses.
 
-[img1_running_game.png](https://github.com/a-maruf/hangman/blob/main/Images/img1_running_game.png)
+![img1_running_game.png](https://github.com/a-maruf/hangman/blob/main/Images/img1_running_game.png)
 
-[img2_incorrect_guess.png](https://github.com/a-maruf/hangman/blob/main/Images/img2_incorrect_guess.png)
+![img2_incorrect_guess.png](https://github.com/a-maruf/hangman/blob/main/Images/img2_incorrect_guess.png)
 
-[img3_correct_guess.png](https://github.com/a-maruf/hangman/blob/main/Images/img3_correct_guess.png)
+![img3_correct_guess.png](https://github.com/a-maruf/hangman/blob/main/Images/img3_correct_guess.png)
 
-[img4_you_have_lost.png](https://github.com/a-maruf/hangman/blob/main/Images/img4_you_have_lost.png)
+![img4_you_have_lost.png](https://github.com/a-maruf/hangman/blob/main/Images/img4_you_have_lost.png)
 
-[img5_you_won.png](https://github.com/a-maruf/hangman/blob/main/Images/img4_you_have_lost.png)
+![img5_you_won.png](https://github.com/a-maruf/hangman/blob/main/Images/img4_you_have_lost.png)
 
 ## File Structure
 The project has a simple file structure:
